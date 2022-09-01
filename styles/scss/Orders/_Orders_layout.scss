@@ -1,0 +1,83 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+li {
+  float: right;
+}
+//menu font size
+.menu_txt {
+  font-size: 21px;
+  display: inline;
+}
+// end menu font size
+li a {
+  display: block;
+  color: #202020;
+  text-align: center;
+  text-decoration: none;
+  //مشخص میکنیم اسم ها داخل منو در هر اسکرین یه چه صورت قرار میگرند
+  padding: 25px 18px;
+  @media (min-width: 300px) and (max-width: 349px) {
+    padding: 25px 8px;
+    .menu_txt {
+      font-size: 15px;
+    }
+  }
+  @media (min-width: 350px) and (max-width: 404px) {
+    padding: 25px 11px;
+    .menu_txt {
+      font-size: 16px;
+    }
+  }
+  @media (min-width: 405px) and (max-width: 518px) {
+    padding: 25px 10px;
+    .menu_txt {
+      font-size: 18px;
+    }
+  }
+}
+
+li a:hover:not(.active) {
+  color: $havij;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 3px solid $havij;
+}
+
+.btn2 {
+  background-color: white;
+  border: white;
+  color: black;
+  padding: 12px 16px;
+  @media (min-width: 300px) and (max-width: 400px) {
+    padding: 12px 0px;
+  }
+  font-size: 16px;
+  cursor: pointer;
+}
+
+// #OrderPrice_div {
+//     padding-right: 15px;
+//     @media (min-width:300px) and (max-width:361px)
+//     {
+//         padding-right: 0px;
+//     }
+// }
+
+.order {
+  background-color: #ffffff;
+  border-radius: 15px;
+  height: 100px;
+  border: #ff9800 2px solid;
+}
+
+.price {
+  font-size: 14px;
+  color: #00c85c;
+  margin-right: 8px;
+}

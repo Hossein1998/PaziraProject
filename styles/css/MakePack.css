@@ -1,0 +1,192 @@
+@font-face {
+  font-family: "Mj_Beirut-Md";
+  src: url("../../font/Mj_Beirut-Md.ttf");
+}
+
+body,
+html {
+  font-family: "Mj_Beirut-Md";
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.backclick_ul {
+  list-style-type: none;
+  margin: 0;
+  padding-bottom: 10px;
+  overflow: hidden;
+  width: 100%;
+  height: 10%;
+  background-color: #f6f5f5;
+}
+
+li {
+  float: right;
+}
+
+.menu_txt_back {
+  font-size: 21px;
+  color: #9e9e9e;
+  display: block;
+  margin-top: 26px;
+}
+
+li .back_link {
+  display: block;
+  color: #202020;
+  text-align: center;
+  text-decoration: none;
+  padding: 25px 10px;
+}
+
+li .tab_link {
+  display: block;
+  color: #202020;
+  text-align: center;
+  text-decoration: none;
+  padding: 25px 0px;
+}
+
+li .tab_link :hover:not(.active) {
+  color: #ff9800;
+  text-decoration: none;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #ff9800;
+}
+
+.back_img {
+  width: 35px;
+  height: 29px;
+}
+
+.tab_ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.menu_txt_tab {
+  display: inline;
+}
+
+.filter_btn {
+  color: #9e9e9e;
+  background-color: #f6f5f5;
+  height: 45px;
+  width: auto;
+  font-size: 15px;
+  border-radius: 7px;
+  border: none;
+}
+
+.filter_btn:hover {
+  color: #9e9e9e;
+  background-color: #f6f5f5;
+  height: 45px;
+  width: auto;
+  font-size: 15px;
+  border-radius: 7px;
+  border: none;
+}
+
+.filter_div {
+  height: 140px;
+}
+
+@media (min-width: 768px) {
+  .filter_div {
+    height: 100px;
+  }
+}
+
+.packs_div {
+  width: 95%;
+  height: 100%;
+  border: #d9d9d9 2px solid;
+  border-radius: 15px;
+}
+
+.pack_name_div {
+  height: 30px;
+  margin-top: 30px;
+}
+
+@media (min-width: 300px) and (max-width: 449px) {
+  .pack_name_div {
+    height: 30px;
+    margin-top: 10px;
+  }
+}
+
+.packs_img {
+  height: 35px !important;
+  width: 30px !important;
+}
+
+@media (min-width: 300px) and (max-width: 449px) {
+  .packs_img {
+    height: 25px !important;
+    width: 20px !important;
+  }
+}
+
+.pack-price {
+  direction: rtl;
+  font-size: 13px;
+}
+
+@media (min-width: 300px) and (max-width: 449px) {
+  .pack-price {
+    font-size: 10px;
+  }
+}
+
+.pack-img {
+  border-radius: 10%;
+  width: 70px;
+  height: 80px;
+}
+
+.smake-pack-div {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 40%;
+  margin-left: -50px;
+  top: 70%;
+  margin-top: -50px;
+}
+
+.sticky-img {
+  position: fixed;
+  left: 90%;
+  margin-left: -50px;
+  top: 90%;
+  margin-top: -50px;
+}
+
+.make-pack-div {
+  position: fixed;
+  border-radius: 5px;
+  width: 100px;
+  height: 90px;
+  font-size: 20px;
+  left: 89%;
+  margin-left: -50px;
+  top: 90%;
+  margin-top: -50px;
+  background-color: #ff9800;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+}
+/*# sourceMappingURL=MakePack.css.map */

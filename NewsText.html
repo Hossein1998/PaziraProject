@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- main css -->
+    <link rel="stylesheet" href="./styles/css/NewsText.css">
+    <title>NewsText</title>
+</head>
+
+<body>
+    <nav>
+        <!-- back click -->
+        <div class="ml-0" style="position: relative; top: 0;">
+            <ul class="backclick_ul">
+                <li class="nav-item"><a href="#" class="back_link">
+                        <img src="./img/back.png" class="back_img img-fluid mr-3 " alt="">
+                    </a></li>
+                <li class="nav-item">
+                    <h5 class="menu_txt_back">بازگشت</h5>
+                </li>
+            </ul>
+        </div>
+        <!-- end  back click -->
+    </nav>
+
+    <section>
+        <div class="background_div pl-3 pr-3">
+            <h5 class="text-right mt-3" style="direction: rtl;">در علم تغذیه اهمیت صبحانه به قدری زیاد است که آن را
+                سرمایه
+                ای برای سلامتی طولانی مدت
+                می دانند. افرادی که به بهانه های مختلف از وعده صبحانه رد می شوند، انتخاب های ناسالم تر برای وعده ناهار
+                دارند. این افراد در طول روز بیشتر غذا می خورند و البته به مواد غذایی چرب و شیرین علاقه پیدا می کنند.
+                شاید
+                این به خاطر باور غلط خیلی از مردم باشد که فکر می کنند چون صبحانه نخورده اند و یا مثلاً از صبح گرسنه بوده
+                اند
+                می توانند در وعده ناهار یا شام هرچه می خواهند بخورند.</h5>
+
+            <div class="w-100">
+                <p class="float-right" style="direction: rtl; color: #a5a5a5;">۶ اسفند </p>
+                <p class="float-left" style="direction: rtl; color: #a5a5a5;">۵:۲۵ بعد از ظهر </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- snackbar -->
+    <button onclick="myFunction()">Show Snackbar</button>
+    <div id="snackbar">Some text some message..</div>
+    <!-- end snackbar -->
+
+
+    <script>
+        // snackbar
+        function myFunction() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        }
+        //end snackbar
+    </script>
+</body>
+
+</html>

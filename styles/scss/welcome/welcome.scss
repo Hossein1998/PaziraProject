@@ -1,0 +1,29 @@
+@import "./../base";
+
+.div2 {
+  height: 580px;
+}
+
+.pazira_logo {
+  height: 370px;
+}
+
+.welcome_txt {
+  color: $havij;
+
+  
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .pazira_logo {
+    height: 270px;
+  }
+
+  .div2 {
+    height: 420px;
+  }
+
+  .pazira_txt {
+    font-size: 20px;
+  }
+}

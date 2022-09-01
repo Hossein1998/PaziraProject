@@ -1,0 +1,149 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- main css -->
+    <link rel="stylesheet" href="./styles/css/SignUpGetCode.css">
+    <link rel="stylesheet" href="./styles/css/SignUpRegister.css">
+    <link rel="stylesheet" href="./styles/css/SubmitOrder.css">
+    <title>SubmitOrder</title>
+</head>
+
+<body>
+
+
+    <nav>
+        <!-- back click -->
+        <div class="ml-0">
+            <ul class="backclick_ul">
+                <li class="nav-item"><a href="#" class="back_link">
+                        <img src="./img/back.png" class="back_img img-fluid mr-3 " alt="">
+                    </a></li>
+                <li class="nav-item">
+                    <h5 class="menu_txt_back">بازگشت</h5>
+                </li>
+            </ul>
+        </div>
+        <!-- end  back click -->
+    </nav>
+
+    <section>
+
+        <div class="container mt-md-5">
+
+            <!-- name and family inputs -->
+            <div class="row d-flex justify-content-center">
+                <div class="form-group-family mt-4">
+                    <input type="text" class="form-field-family" placeholder=" " name="family" id='family' required />
+                    <label for="family" class="form-label-family">نام خانوادگی</label>
+                </div>
+                <div class="form__group mt-4">
+                    <input type="text" class="form-field-name" placeholder=" " name="name" id='name' required />
+                    <label for="name" class="form-label-name">نام</label>
+                </div>
+                <!-- end name and family inputs -->
+            </div>
+
+
+            <!-- delivery date inputs -->
+            <div class="row mt-4 no-gutters pl-1 pl-sm-1 pr-4 pr-sm-1">
+                <div class="col-9  d-flex justify-content-end ">
+                    <div class="form-group-deliverydate d-flex justify-content-center">
+                        <input type="tel" class="form-field-year" placeholder=" " name="year" id='year' required />
+                        <label for="year" class="form-label-year">سال</label>
+                    </div>
+                    <div class="form-group-deliverydate d-flex justify-content-center">
+                        <input type="tel" class="form-field-month" placeholder=" " name="month" id='month' required />
+                        <label for="month" class="form-label-month">ماه</label>
+                    </div>
+                    <div class="form-group-deliverydate d-flex justify-content-center">
+                        <input type="tel" class="form-field-day" placeholder=" " name="day" id='day' required />
+                        <label for="day" class="form-label-day">روز</label>
+                    </div>
+                </div>
+
+                <div class="col-3  col-sm-2 d-flex justify-content-end align-items-center pl-md-4 pl-sm-2">
+                    <h5 class="deliverydate_txt text-center mt-3"> : تاریخ تحویل </h5>
+                </div>
+
+            </div>
+            <!-- end delivery date inputs -->
+
+            <!-- address input -->
+            <div class="row mt-3">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="form-group-address ">
+                        <input type="text" class="form-field-address text-right" placeholder=" " name="address"
+                            id='address' required />
+                        <label for="address" class="form-label-address">آدرس</label>
+                    </div>
+                </div>
+            </div>
+            <!-- end address input -->
+
+            <!-- phonenumber input -->
+            <div class="row justify-content-center mt-3">
+                <div class="form-group-phonenumber ">
+                    <input type="tel" class="form-field-phonenumber" placeholder=" " name="tel" id='tel' required />
+                    <label for="tel" class="form-label-phonenumber">شماره تلفن</label>
+                    <div class="_98_div input-text">+۹۸</div>
+                </div>
+            </div>
+            <!-- end phonenumber input -->
+
+            <div style="height: 40px;">
+
+            </div>
+
+            <div class="row justify-content-center mt-5">
+                <div class="form-group-price ">
+                    <h6 class="price-txt font-weight-bold d-inline"> 9,900<span class="font-weight-normal">
+                            تومان </span></h6>
+                    <h5 class="float-right d-inline">قیمت کل</h5>
+                </div>
+
+
+            </div>
+
+            <button class="payment_button btn-block text-center mx-auto">پرداخت</button>
+        </div>
+    </section>
+
+
+
+
+    <script>
+        // snackbar
+        function myFunction() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        }
+        //end snackbar
+
+        //border and color of fromsubmited
+        document.getElementById("fromsubmited").style.borderBottom = "3px solid #ff9800";
+        document.getElementById("fromsubmited").style.color = "#ff9800";
+    </script>
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- script js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

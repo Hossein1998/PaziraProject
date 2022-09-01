@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "Mj_Beirut-Md";
+  src: url("../../font/Mj_Beirut-Md.ttf");
+}
+
+body,
+html {
+  font-family: "Mj_Beirut-Md";
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.backclick_ul {
+  list-style-type: none;
+  margin: 0;
+  width: 100%;
+  height: 30%;
+  background-image: url("./../../img/1.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.background_div {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 28%;
+}
+
+li {
+  float: right;
+}
+
+.menu_txt_back {
+  font-size: 21px;
+  color: #9e9e9e;
+  display: block;
+  margin-top: 26px;
+}
+
+li .back_link {
+  display: block;
+  color: #202020;
+  text-align: center;
+  text-decoration: none;
+  padding: 25px 10px;
+}
+
+li .tab_link {
+  display: block;
+  color: #202020;
+  text-align: center;
+  text-decoration: none;
+  padding: 25px 0px;
+}
+
+.back_img {
+  width: 35px;
+  height: 29px;
+}
+/*# sourceMappingURL=NewsText.css.map */

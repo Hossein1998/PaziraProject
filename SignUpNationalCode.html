@@ -1,0 +1,164 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./styles/css/SignUpNationalCode.css">
+    <title>SignUpNationalCode</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header_div1 row mx-auto">
+            </div>
+        </div>
+        <!-- between logo and input -->
+        <div class="header_div2">
+        </div>
+        <!-- end between logo and input -->
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-11 col-sm-11 col-md-9 col-lg-6">
+                    <form method="POST" accept="/">
+                        <!-- national code input -->
+                        <div class="form__group ">
+                            <input type="tel" class="form-field-nationalcode" placeholder=" " name="username"
+                                id='username' required />
+                            <label for="username" class="form-label-nationalcode">کد ملی <span>(نام
+                                    کاربری)</span></label>
+                        </div>
+                        <!-- end national code input -->
+
+                        <!-- password input -->
+                        <div class="form__group mt-4">
+                            <input type="password" class="form-field-password" placeholder=" " name="password"
+                                id='password'>
+                            <img src="./img/show.png" alt="show_password" id="pass-status" class="field-icon"
+                                onclick="viewPassword1()">
+                            <label for="password" class="form-label-password">رمز عبور</label>
+                        </div>
+                        <!-- end password input  -->
+
+
+                        <!-- repeat password input -->
+                        <div class="form__group mt-4">
+                            <input type="password" class="form-field-Rpassword" placeholder=" " name="Rpassword"
+                                id='Rpassword'>
+                            <img src="./img/show.png" alt="show_rpassword" id="Rpass-status" class="field-icon"
+                                onclick="viewPassword2()" />
+                            <label for="Rpassword" class="form-label-Rpassword">تکرار رمز عبور</label>
+                        </div>
+                        <!-- end repeat password input  -->
+
+                        <!-- enter button -->
+                        <button class="enterbutton btn btn-block text-center" type="submit">
+                            مرحله بعد</button>
+                        <!-- end enter button -->
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- snackbar -->
+    <!-- <button onclick="myFunction()">Show Snackbar</button> -->
+    <div id="snackbar">Some text some message..</div>
+    <!-- end snackbar -->
+
+    <script>
+        // Rpassword_field.onblur = function () {
+        //     var x = document.getElementById("Rpass-status");
+        //     x.style.display = "none";
+        // };
+
+        // Rpassword_field.onfocus = function () {
+        //     var x = document.getElementById("Rpass-status");
+        //     if (x.style.display === "none") {
+        //         x.style.display = "block";
+
+        //     }
+        // };
+
+        // var x = document.getElementById("Rpass-status");
+        // x.style.display = "none"
+        // function myfunction2() {
+        //     var x = document.getElementById("Rpass-status");
+        //     if (x.style.display === "none") {
+        //         x.style.display = "block";
+        //         // } else {
+        //         //     x.style.display = "none";
+        //     }
+        // }
+
+        // document.getElementById('Rpassword-field').blur(function () {
+        //     x.style.display = "none"
+        // });
+
+
+        // passwrd input
+        function viewPassword1() {
+            var passwordInput = document.getElementById('password');
+            var passStatus = document.getElementById('pass-status');
+
+            if (passwordInput.type == 'password') {
+                passwordInput.type = 'text';
+
+            }
+            else {
+                passwordInput.type = 'password';
+
+            }
+        }
+
+        // Rpassword input
+        function viewPassword2() {
+            var passwordInput = document.getElementById('Rpassword');
+            var passStatus = document.getElementById('Rpass-status');
+
+            if (passwordInput.type == 'password') {
+                passwordInput.type = 'text';
+
+            }
+            else {
+                passwordInput.type = 'password';
+
+            }
+        }
+        // snackbar
+        function myFunction() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        }
+        //end snackbar
+    </script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- script js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

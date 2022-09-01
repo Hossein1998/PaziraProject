@@ -1,0 +1,122 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./styles/css/SignUpGetCode.css">
+    <title>SignUpGetCode</title>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="container">
+            <div class="header_div1">
+            </div>
+        </div>
+        <!-- between hearder and input -->
+        <div class="header_div2">
+        </div>
+        <!-- end between hearder and input -->
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-11 col-sm-11 col-md-9 col-lg-6">
+
+                    <!-- phonenumber input -->
+                    <div class="form__group ">
+                        <input type="tel" class="form__field" placeholder=" " name="tel" id='tel' required />
+                        <label for="tel" class="form__label ">شماره تلفن</label>
+                        <div class="_98_div input-text">+۹۸</div>
+                    </div>
+                    <!-- end phonenumber input -->
+                </div>
+
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-11 col-sm-11 col-md-9 col-lg-6">
+                    <!-- get code -->
+                    <div class="div_textcode d-inline float-left">
+                        <div class="d-inline m-0 text-center">
+                            <h3 class="m-0">۳۳</h3>
+                            <p class="m-0">ثانیه برای دریافت دوباره کد</p>
+                        </div>
+                    </div>
+                    <div class="divv w-50 d-inline float-right d-flex justify-content-end border-0">
+                        <button class="getcode_button text-center border-0" onclick="onClick(this)">دریافت
+                            کد</button>
+                    </div>
+                    <!-- end get code -->
+                </div>
+            </div>
+        </div>
+
+        <div class=" container">
+            <div class="row justify-content-center">
+                <div class="col-11 col-sm-11 col-md-9 col-lg-6">
+                    <!-- input get code -->
+                    <div class="form__group mt-4">
+                        <input type="tel" class="form__field" placeholder=" " name="password" id='code' required />
+                        <label for="code" class="form__label">کد دریافتی</label>
+                    </div>
+                    <!-- end input get code -->
+
+                    <!-- next button -->
+                    <button class="enter_button btn btn-block text-center" type="submit"> مرحله بعد</button>
+                    <!-- end next button -->
+                </div>
+            </div>
+
+    </section>
+
+    </div>
+    <!-- snackbar -->
+    <!-- <button onclick="myFunction()">Show Snackbar</button> -->
+    <div id="snackbar">Some text some message..</div>
+    <!-- end snackbar -->
+
+    <script>
+        //opacity getcode button
+        function onClick(event) {
+            event.className = "button visited";
+
+        };
+        //end opacity getcode button
+
+        // snackbar
+        function myFunction() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        }
+            //end snackbar
+    </script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- script js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

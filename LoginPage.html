@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./styles/css/LoginPage.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <div class="container">
+            <div class="header_div1 row mx-auto">
+                <img src="./img/logo 1.png" alt="pazira_logo" class="img_logo img-fluid mx-auto d-block mt-5">
+            </div>
+        </div>
+        <!-- end Logo -->
+
+        <!-- between logo and input -->
+        <div class="header_div2">
+        </div>
+        <!-- end between logo and input -->
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-11 col-sm-11 col-md-9 col-lg-6">
+                    <form method="POST" accept="/">
+                        <!-- Username input -->
+                        <div class="form__group ">
+                            <input type="text" class="form__field empty" placeholder="&#xf007;" name="username"
+                                id='username' required />
+                            <label for="username" class="form__label ">نام کاربری</label>
+                        </div>
+                        <!-- end Username input -->
+
+                        <!-- password input -->
+                        <div class="form__group mt-4">
+                            <input type="password" class="form__field empty" placeholder="&#xf023;" name="password"
+                                id='password' required />
+                            <label for="password" class="form__label" id="lbl2">رمز عبور</label>
+                        </div>
+                        <!-- end password input  -->
+
+                        <!-- forgot password link -->
+                        <div class="text-right mt-2">
+                            <small><a href="#" class="text-decoration-none text-dark">رمز
+                                    عبور را فراموش کرده اید؟</a></small>
+                        </div>
+                        <!-- end forgot password link -->
+
+                        <!-- enter button -->
+                        <button class="enterbutton btn btn-block text-center" type="submit">
+                            ورود</button>
+                        <!-- end enter button -->
+
+                        <!-- register link -->
+                        <div class="text-center mt-2">
+                            <small><a href="#" class="text-decoration-none text-dark">
+                                    ثبت نام نکرده اید؟</a></small>
+                        </div>
+                        <!-- end register link -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- snackbar -->
+    <button onclick="myFunction()">Show Snackbar</button>
+    <div id="snackbar">Some text some message..</div>
+    <!-- end snackbar -->
+
+    <script>
+        // snackbar
+        function myFunction() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        }
+            //end snackbar
+    </script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- script js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

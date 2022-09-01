@@ -1,0 +1,151 @@
+.form-group-description {
+  position: relative;
+  border-radius: 12px;
+  margin-top: 10px;
+  height: 150px;
+  background-color: $backgroud-color;
+  width: 85%;
+  @media (min-width: 300px) and (max-width: 400px) {
+    width: 95%;
+  }
+  @media (min-width: 401px) and (max-width: 500px) {
+    width: 94%;
+  }
+  @media (min-width: 501px) and (max-width: 600px) {
+    width: 93%;
+  }
+  @media (min-width: 601px) and (max-width: 700px) {
+    width: 92%;
+  }
+  @media (min-width: 701px) and (max-width: 800px) {
+    width: 91%;
+  }
+  @media (min-width: 801px) and (max-width: 900px) {
+    width: 90%;
+  }
+  @media (min-width: 901px) and (max-width: 1100px) {
+    width: 85%;
+  }
+//   @media (min-width: 1101px) and (max-width: 1200px) {
+//     width: 88%;
+//   }
+}
+
+.form-field-description {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  color: #9e9e9e;
+  background: transparent;
+  text-align: center;
+  font-size: 1.5rem;
+  // padding: 10px;
+  border-radius: 12px;
+  transition: border-color 0.2s;
+
+  &:placeholder-shown ~ .form-label-description {
+    font-size: $lblsize;
+    cursor: text;
+    top: 15px;
+  }
+}
+.form-label-description {
+  position: absolute;
+  top: 85%;
+  margin-top: 45px;
+
+  // lblدر وسط قرار بگیرد زمانی که سایز گوچک میشود
+  //   @media (min-width: 300px) and (max-width: 400px) {
+  //     left: 60%;
+  //     margin-left: -60px;
+  //   }
+  //   @media (min-width: 768px) {
+  //     left: 55%;
+  //     margin-left: -60px;
+  //   }
+  color: $gray;
+  display: block;
+  transition: 0.2s;
+}
+.form-field-description:focus ~ label,
+.form-field-description:not(:placeholder-shown) ~ label {
+  @media (min-width: 300px) and (max-width: 349px) {
+    transform: translate(125px, -197px);
+  }
+  @media (min-width: 350px) and (max-width: 399px) {
+    transform: translate(140px, -197px);
+  }
+  @media (min-width: 400px) and (max-width: 449px) {
+    transform: translate(165px, -197px);
+  }
+  @media (min-width: 450px) and (max-width: 499px) {
+    transform: translate(190px, -197px);
+  }
+  @media (min-width: 500px) and (max-width: 767px) {
+    transform: translate(230px, -197px);
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    transform: translate(315px, -197px);
+  }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    transform: translate(430px, -197px);
+  }
+  @media (min-width: 1201px) {
+    transform: translate(520px, -197px);
+  }
+}
+.form-field-description:focus {
+  ~ .form-label-description {
+    position: absolute;
+    top: 0;
+    outline: none;
+    pointer-events: none;
+    font-size: 15px;
+    display: block;
+    transition: 0.2s;
+    //font-size: 2rem;
+    transform: translate(50px, -20px);
+    @media (min-width: 300px) and (max-width: 349px) {
+      transform: translate(125px, -67px);
+    }
+    @media (min-width: 350px) and (max-width: 399px) {
+      transform: translate(140px, -67px);
+    }
+    @media (min-width: 400px) and (max-width: 449px) {
+      transform: translate(165px, -67px);
+    }
+    @media (min-width: 450px) and (max-width: 499px) {
+      transform: translate(190px, -67px);
+    }
+    @media (min-width: 500px) and (max-width: 767px) {
+      transform: translate(230px, -67px);
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      transform: translate(315px, -67px);
+    }
+    @media (min-width: 992px) and (max-width: 1200px) {
+      transform: translate(430px, -67px);
+    }
+    @media (min-width: 1201px) {
+      transform: translate(440px, -67px);
+    }
+    color: $havij;
+    //font-weight: 700;
+  }
+  &::placeholder {
+    color: $havij;
+  }
+
+  padding-bottom: 6px;
+  //font-weight: 700;
+  border-width: 2px;
+  border: $havij 2px solid;
+  background-color: $backgroud-color;
+}
+.form-field-description {
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
+}

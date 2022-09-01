@@ -1,0 +1,325 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- main css -->
+    <link rel="stylesheet" href="./styles/css/MakePack.css">
+    <title>MakePack4</title>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- back click -->
+            <div class="ml-0">
+                <ul class="backclick_ul">
+                    <li class="nav-item"><a href="#" class="back_link">
+                            <img src="./img/back.png" class="back_img img-fluid mr-3 " alt="">
+                        </a></li>
+                    <li class="nav-item">
+                        <h5 class="menu_txt_back">بازگشت</h5>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- end  back click -->
+
+            <!-- tabs -->
+            <div class="container-fluid ">
+                <div class="ml-0">
+                    <ul class="tab_ul">
+                        <li class="nav-item w-50"><a href="#" class="tab_link">
+                                <h5 class="menu_txt_tab" id="readypack">بسته های آماده </h5>
+                            </a></li>
+                        <li class="nav-item  w-50"><a href="#" class="tab_link">
+                                <h5 class="menu_txt_tab" id="makepack">ساخت بسته </h5>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- end tabs -->
+        </nav>
+    </header>
+
+
+    <section>
+        <!-- filtring -->
+        <div class="container">
+            <div class="filter_div mt-4 pr-4 ">
+                <h5 class="float-right mt-2" style="color: #9e9e9e;"> : فیلتر بر اساس</h5>
+                <a href="#">
+                    <button class="filter_btn btn btn-block float-right text-center mr-4 mb-3" onclick="onClick(this)">
+                        همه</button>
+                </a>
+                <a href="#">
+                    <button class="filter_btn btn btn-block float-right text-center mr-3 mb-3" onclick="onClick(this)">
+                        میوه </button>
+                </a>
+                <a href="#">
+                    <button class="filter_btn btn btn-block float-right text-center mr-3 mb-3" onclick="onClick(this)">
+                        شیرینی</button>
+                </a>
+                <a href="#">
+                    <button class="filter_btn btn btn-block float-right text-center mr-3 mb-3" onclick="onClick(this)">
+                        نوشیدنی</button>
+                </a>
+                <a href="#">
+                    <button class="filter_btn btn btn-block float-right text-center mr-3 mb-3" onclick="onClick(this)">
+                        لوازم پلاستیکی</button>
+                </a>
+            </div>
+        </div>
+        <!-- end filtring -->
+
+        <div class="container">
+            <!-- row 1 -->
+            <div class="row d-flex justify-content-center no-gutters">
+                <div class="col-4 d-flex justify-content-center p-0">
+                    <div class="packs_div text-center pt-3   pl-2 pr-2 pl-md-3 pr-md-3 pb-3">
+                        <img src="./img/pineapple-juice.png" alt="" class="pack-img img-fluid border-0">
+                        <!-- pack name -->
+                        <div class="pack_name_div text-right" style="height:IMAGE_HEIGHT; line-height:IMAGE_HEIGHT;">
+                            <h6 class="d-inline">نام</h6>
+                            <a href="#">
+                                <img src="./img/pack5.png" alt=""
+                                    class="packs_img border-0 mt-3 mt-sm-2 img-fluid float-left"
+                                    onclick="onaddClick(this)">
+                            </a>
+                            <h6 class="mt-2 pack-price">9,900<span> تومان</span> <span class="mr-1 mr-md-4 mr-lg-5">
+                                    2حجم</span>
+                            </h6>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center p-0">
+                    <div class="packs_div text-center pt-3 pr-2 pl-2 pl-md-3 pr-md-3 pb-3">
+                        <img src="./img/047-orange.png" alt="" class="pack-img img-fluid border-0">
+                        <!-- pack name -->
+                        <div class="pack_name_div text-right" style="height:IMAGE_HEIGHT; line-height:IMAGE_HEIGHT;">
+                            <h6 class="d-inline"> نام </h6>
+                            <a href="#">
+                                <img src="./img/pack5.png" alt=""
+                                    class="packs_img border-0 mt-3 mt-sm-2 img-fluid float-left"
+                                    onclick="onaddClick(this)">
+                            </a>
+                            <h6 class="mt-2 pack-price">9,900<span> تومان</span> <span class="mr-1 mr-md-4 mr-lg-5">
+                                    2حجم</span>
+                            </h6>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center p-0">
+                    <div class="packs_div text-center pt-3 pr-2 pl-2 pl-md-3 pr-md-3 pb-3">
+                        <img src="./img/048-apple.png" alt="" class="pack-img img-fluid border-0">
+                        <!-- pack name -->
+                        <div class="pack_name_div text-right" style="height:IMAGE_HEIGHT; line-height:IMAGE_HEIGHT;">
+                            <h6 class="d-inline"> نام </h6>
+                            <a href="#">
+                                <img src="./img/pack5.png" alt=""
+                                    class="packs_img border-0 mt-3 mt-sm-2 img-fluid float-left"
+                                    onclick="onaddClick(this)">
+                            </a>
+                            <h6 class="mt-2 pack-price">9,900<span> تومان</span> <span class="mr-1 mr-md-4 mr-lg-5">
+                                    2حجم</span>
+                            </h6>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- end row 1 -->
+
+            <!-- row 2 -->
+            <div class="row d-flex justify-content-center no-gutters mt-3">
+                <div class="col-4 d-flex justify-content-center p-0">
+                    <div class="packs_div text-center pt-3   pl-2 pr-2 pl-md-3 pr-md-3 pb-3">
+                        <img src="./img/041-popsicle-1.png" alt="" class="pack-img img-fluid border-0">
+                        <!-- pack name -->
+                        <div class="pack_name_div text-right" style="height:IMAGE_HEIGHT; line-height:IMAGE_HEIGHT;">
+                            <h6 class="d-inline">نام</h6>
+                            <a href="#">
+                                <img src="./img/pack5.png" alt=""
+                                    class="packs_img border-0 mt-3 mt-sm-2 img-fluid float-left"
+                                    onclick="onaddClick(this)">
+                            </a>
+                            <h6 class="mt-2 pack-price">9,900<span> تومان</span> <span class="mr-1 mr-md-4 mr-lg-5">
+                                    2حجم</span>
+                            </h6>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center p-0">
+                    <div class="packs_div text-center pt-3 pr-2 pl-2 pl-md-3 pr-md-3 pb-3">
+                        <img src="./img/050-watermelon.png" alt="" class="pack-img img-fluid border-0">
+                        <!-- pack name -->
+                        <div class="pack_name_div text-right" style="height:IMAGE_HEIGHT; line-height:IMAGE_HEIGHT;">
+                            <h6 class="d-inline"> نام </h6>
+                            <a href="#">
+                                <img src="./img/pack5.png" alt=""
+                                    class="packs_img border-0 mt-3 mt-sm-2 img-fluid float-left"
+                                    onclick="onaddClick(this)">
+                            </a>
+                            <h6 class="mt-2 pack-price">9,900<span> تومان</span> <span class="mr-1 mr-md-4 mr-lg-5">
+                                    2حجم</span>
+                            </h6>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center p-0">
+                    <div class="packs_div text-center pt-3 pr-2 pl-2 pl-md-3 pr-md-3 pb-3">
+                        <img src="./img/046-melon.png" alt="" class="pack-img img-fluid border-0">
+                        <!-- pack name -->
+                        <div class="pack_name_div text-right" style="height:IMAGE_HEIGHT; line-height:IMAGE_HEIGHT;">
+                            <h6 class="d-inline"> نام </h6>
+                            <a href="#">
+                                <img src="./img/pack5.png" alt=""
+                                    class="packs_img border-0 mt-3 mt-sm-2 img-fluid float-left"
+                                    onclick="onaddClick(this)">
+                            </a>
+                            <h6 class="mt-2 pack-price">9,900<span> تومان</span> <span class="mr-1 mr-md-4 mr-lg-5">
+                                    2حجم</span>
+                            </h6>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- end row 2 -->
+
+            <!-- row 3 -->
+            <div class="row d-flex justify-content-center no-gutters mt-3">
+                <div class="col-4 col-lg-3 d-flex justify-content-center p-0">
+                    <div class="packs_div text-center pt-3 pl-2 pr-2 pl-md-3 pr-md-3 pb-3">
+                        <img src="./img/009-sandwich.png" alt="" class="pack-img img-fluid border-0">
+                        <!-- pack name -->
+                        <div class="pack_name_div text-right" style="height:IMAGE_HEIGHT; line-height:IMAGE_HEIGHT;">
+                            <h6 class="d-inline">نام</h6>
+                            <a href="#">
+                                <img src="./img/pack5.png" alt=""
+                                    class="packs_img border-0 mt-3 mt-sm-2 img-fluid float-left"
+                                    onclick="onaddClick(this)">
+                            </a>
+                            <h6 class="mt-2 pack-price">9,900<span> تومان</span> <span class="mr-1 mr-md-4 mr-lg-5">
+                                    2حجم</span>
+                            </h6>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3 d-flex justify-content-center p-0">
+                    <div class="packs_div text-center pt-3 pr-2 pl-2 pl-md-3 pr-md-3 pb-3">
+                        <img src="./img/016-cookies.png" alt="" class="pack-img img-fluid border-0">
+                        <!-- pack name -->
+                        <div class="pack_name_div text-right" style="height:IMAGE_HEIGHT; line-height:IMAGE_HEIGHT;">
+                            <h6 class="d-inline"> نام </h6>
+                            <a href="#">
+                                <img src="./img/pack5.png" alt=""
+                                    class="packs_img border-0 mt-3 mt-sm-2 img-fluid float-left"
+                                    onclick="onaddClick(this)">
+                            </a>
+                            <h6 class="mt-2 pack-price">9,900<span> تومان</span> <span class="mr-1 mr-md-4 mr-lg-5">
+                                    2حجم</span>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3 d-flex justify-content-center p-0">
+                    <div class="packs_div text-center pt-3 pr-2 pl-2 pl-md-3 pr-md-3 pb-3">
+                        <img src="./img/048-apple.png" alt="" class="pack-img img-fluid border-0">
+                        <!-- pack name -->
+                        <div class="pack_name_div text-right" style="height:IMAGE_HEIGHT; line-height:IMAGE_HEIGHT;">
+                            <h6 class="d-inline"> نام </h6>
+                            <a href="#">
+                                <img src="./img/pack5.png" alt=""
+                                    class="packs_img border-0 mt-3 mt-sm-2 img-fluid float-left"
+                                    onclick="onaddClick(this)">
+                            </a>
+                            <h6 class="mt-2 pack-price">9,900<span> تومان</span> <span class="mr-1 mr-md-4 mr-lg-5">
+                                    2حجم</span>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-lg-3 d-flex justify-content-center p-0">
+                    <div class="packs_div text-center pt-3 pr-2 pl-2 pl-md-3 pr-md-3 pb-3">
+                        <img src="./img/048-apple.png" alt="" class="pack-img img-fluid border-0">
+                        <!-- pack name -->
+                        <div class="pack_name_div text-right" style="height:IMAGE_HEIGHT; line-height:IMAGE_HEIGHT;">
+                            <h6 class="d-inline"> نام </h6>
+                            <a href="#">
+                                <img src="./img/pack5.png" alt=""
+                                    class="packs_img border-0 mt-3 mt-sm-2 img-fluid float-left"
+                                    onclick="onaddClick(this)">
+                            </a>
+                            <h6 class="mt-2 pack-price">9,900<span> تومان</span> <span class="mr-1 mr-md-4 mr-lg-5">
+                                    2حجم</span>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end row 3 -->
+        </div>
+
+    </section>
+
+
+    <!-- fixed image -->
+    <a href="#">
+        <div class="make-pack-div d-block d-flex align-items-center justify-content-center"> 222/126</div>
+    </a>
+    <!-- end fixed image -->
+
+
+
+    <script>
+        // change background button filter
+        function onClick(event) {
+            event.style.background = "#ff9800";
+            event.style.color = "#fff";
+        };
+        // end change background button filter
+
+        //border and color
+        document.getElementById("makepack").style.borderBottom = "3px solid #ff9800";
+        document.getElementById("makepack").style.color = "#ff9800";
+
+        // snackbar
+        function myFunction() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        }
+            //end snackbar
+    </script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- script js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,295 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- bootstrap-drawer -->
+    <link rel="stylesheet" href="dist/css/bootstrap-drawer.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- drawer -->
+    <link rel="stylesheet" href="./styles/css/Drawer&menu.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./styles/css/News.css">
+    <title>News</title>
+</head>
+
+<body>
+    <nav>
+        <div class="container-fluid ">
+            <div class="ml-0">
+                <ul>
+                    <li class="nav-item" style="float: left;">
+                        <button class="btn btn2"><i class="fa fa-bars pt-2" data-toggle="drawer" data-target="#drawer-1"
+                                style="width: 30px; font-size: 1.8rem;"></i></button></li>
+                    <li class="nav-item"><a href="#">
+                            <h5 class="menu_txt">خانه</h5>
+                        </a></li>
+                    <li class="nav-item"><a href="#">
+                            <h5 class="menu_txt">سبد خرید</h5>
+                        </a></li>
+                    <li class="nav-item"><a href="#">
+                            <h5 class="menu_txt">سفارشات</h5>
+                        </a></li>
+                    <li class="nav-item"><a href="#">
+                            <h5 class="menu_txt" id="news">اخبار و مقالات</h5>
+                        </a></li>
+                </ul>
+
+            </div>
+
+            <!-- Drawer -->
+            <div class="drawer drawer-left slide" tabindex="-1" role="dialog" aria-labelledby="drawer-1-title"
+                aria-hidden="true" id="drawer-1" style="direction: rtl;">
+                <div class="drawer-content drawer-content-scrollable" role="document">
+                    <div class="drawer-header">
+                        <img src="./img/bill.jpg" alt="logo" class="profile_img img-fluid rounded-circle mr-2 mt-2">
+                        <h6 class="user-name m-0 mt-4 mr-3 text-right"> بیل گیتس ایرامنش</h6>
+                        <div class="div_Email_Edit m-0 mt-2">
+                            <p class="user-email float-right mt-2 mr-3">BillGates@gmail.com</p>
+                            <a href="#" class="m-0 ">
+                                <p class="edit_profile m-0 float-left ml-2">ویرایش</p>
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <div class="drawer-body text-center mt-1 m-0 p-0">
+                        <div class="d-flex justify-content-start mt-2 pr-3 align-items-center" id="div_icon"
+                            onmouseover="hoverHome();" onmouseout="unhoverHome();">
+                            <a href="#" class="mt-1 text-decoration-none">
+                                <img src="./img/house-black-silhouette-without-door.png" alt="home_icon"
+                                    class="img-icon img-fluid" id="home_icon">
+                                <h5 class="icon_txt d-inline mr-4 ">خانه</h5>
+                            </a>
+                        </div>
+
+                        <div class="d-flex justify-content-start align-items-center pr-3 mt-2" id="div_icon"
+                            onmouseover="hoverCart();" onmouseout="unhoverCart();">
+                            <a href="#" class=" mt-1 text-decoration-none">
+                                <img src="./img/shopping-cart (1).png" alt="cart_icon" class=" img-icon img-fluid"
+                                    id="cart_icon">
+                                <h5 class="icon_txt d-inline mr-4 ">سبد خرید</h5>
+                            </a>
+                        </div>
+
+                        <div class="d-flex justify-content-start align-items-center pr-3 mt-2 " id="div_icon"
+                            onmouseover="hoverList();" onmouseout="unhoverList();">
+                            <a href=" #" class="  mt-1 text-decoration-none">
+                                <img src="./img/shopping-list.png" alt="list_icon" class="img-icon img-fluid"
+                                    id="list_icon">
+                                <h5 class="icon_txt d-inline mr-4">سفارشات</h5>
+                            </a>
+                        </div>
+
+                        <div class="d-flex justify-content-start  align-items-center pr-3 mt-2" id="div_icon"
+                            onmouseover="hoverNews();" onmouseout="unhoverNews();">
+                            <a href="#" class=" mt-1 text-decoration-none">
+                                <img src="./img/megaphone.png" alt="news_icon" class="img-icon img-fluid"
+                                    id="news_icon">
+                                <h5 class="icon_txt d-inline  mr-4">اخبار و مقالات</h5>
+                            </a>
+                        </div>
+
+                        <div class="d-flex justify-content-start align-items-center pr-3 mt-2" id="div_icon"
+                            onmouseover="hoverPack();" onmouseout="unhoverPack();">
+                            <a href="#" class="  mt-1 text-decoration-none">
+                                <img src="./img/pack 1.png" alt="pack_icon" class="img-icon img-fluid" id="pack_icon">
+                                <h5 class="icon_txt d-inline mr-4">بسته های من</h5>
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-start align-items-center pr-3 mt-2" id="div_icon"
+                            onmouseover="hoverAbout_us();" onmouseout="unhoverAbout_us();">
+                            <a href="#" class="  mt-1 text-decoration-none">
+                                <img src="./img/about-us.png" alt="aboutUs_icon" class="img-icon img-fluid "
+                                    id="about_us_icon">
+                                <h5 class="icon_txt d-inline mr-4">درباره ما</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end Drawer -->
+        </div>
+    </nav>
+
+    <section>
+
+        <div class="container pl-5 pr-5">
+            <!-- news 1 -->
+            <div class="row d-flex justify-content-center mt-4">
+                <a href="#">
+                    <img src="./img/egg.jpg" class="img-news img-fluid" alt="news_img">
+                </a>
+                <div class=" mt-1" style="width: 600px;">
+                    <p class="date_txt float-right mr-3">۶ اسفند </p>
+                    <p class="date_txt float-left ml-2">۵:۲۵ بعد از ظهر </p>
+                </div>
+            </div>
+            <!-- end news 1 -->
+
+            <!-- news 2 -->
+            <div class="row d-flex justify-content-center">
+                <a href="#">
+                    <img src="./img/die.jpg" class="img-news img-fluid" alt="news_img">
+                </a>
+                <div class=" mt-1" style="width: 600px;">
+                    <p class="date_txt float-right mr-3" ">۶ اسفند </p>
+                    <p class=" date_txt float-left ml-2">۵:۲۵ بعد از ظهر </p>
+                </div>
+            </div>
+            <!-- end news 2 -->
+
+            <!-- news 3 -->
+            <div class="row d-flex justify-content-center">
+                <a href="#">
+                    <img src="./img/birthday.jpg" class="img-news img-fluid" alt="news_img">
+                </a>
+                <div class=" mt-1" style="width: 600px;">
+                    <p class="date_txt float-right mr-3">۶ اسفند </p>
+                    <p class="date_txt float-left ml-2">۵:۲۵ بعد از ظهر </p>
+                </div>
+            </div>
+            <!-- end news 3 -->
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- snackbar -->
+    <!-- <button onclick="myFunction()">Show Snackbar</button> -->
+    <!-- <div id="snackbar">Some text some message..</div> -->
+    <!-- end snackbar -->
+
+
+
+
+    <!-- slider ,swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <script>
+        //border and color of news
+        document.getElementById("news").style.borderBottom = "3px solid #ff9800";
+        document.getElementById("news").style.color = "#ff9800";
+
+        // snackbar
+        function myFunction() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        }
+        //end snackbar
+
+        //change icon when hover
+
+        function hoverAbout_us() {
+            var x = document.getElementById("about_us_icon");
+            x.setAttribute('src', './img/about-us (1).png');
+        }
+
+        function unhoverAbout_us() {
+            var x = document.getElementById("about_us_icon");
+            x.setAttribute('src', './img/about-us.png');
+        }
+        function hoverPack() {
+            var x = document.getElementById("pack_icon");
+            x.setAttribute('src', './img/pack.png');
+        }
+        function unhoverPack() {
+            var x = document.getElementById("pack_icon");
+            x.setAttribute('src', './img/pack 1.png');
+        }
+        function hoverNews() {
+            var x = document.getElementById("news_icon");
+            x.setAttribute('src', './img/megaphone (1).png');
+        }
+        function unhoverNews() {
+            var x = document.getElementById("news_icon");
+            x.setAttribute('src', './img/megaphone.png');
+        }
+        function hoverList() {
+            var x = document.getElementById("list_icon");
+            x.setAttribute('src', './img/shopping-list (1).png');
+        }
+        function unhoverList() {
+            var x = document.getElementById("list_icon");
+            x.setAttribute('src', './img/shopping-list.png');
+        }
+        function hoverCart() {
+            var x = document.getElementById("cart_icon");
+            x.setAttribute('src', './img/shopping-cart (2).png');
+        }
+        function unhoverCart() {
+            var x = document.getElementById("cart_icon");
+            x.setAttribute('src', './img/shopping-cart (1).png');
+        }
+        function hoverHome() {
+            var x = document.getElementById("home_icon");
+            x.setAttribute('src', './img/house-black-silhouette-without-door (1).png');
+        }
+        function unhoverHome() {
+            var x = document.getElementById("home_icon");
+            x.setAttribute('src', './img/house-black-silhouette-without-door.png');
+        }
+        // end change icon when hover
+
+        //drawer
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+        // end drawer
+
+
+    </script>
+
+
+    <!-- js drawer -->
+    <script src="dist/js/bootstrap-drawer.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- script js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

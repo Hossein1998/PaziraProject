@@ -1,0 +1,402 @@
+.form-group-birth {
+  position: relative;
+  border-radius: 12px;
+  margin-top: 10px;
+  height: 55px;
+  background-color: $backgroud-color;
+  @media (min-width: 300px) and (max-width: 400px) {
+    width: 26.4%;
+  }
+  @media (min-width: 401px) and (max-width: 500px) {
+    width: 27%;
+  }
+  @media (min-width: 501px) and (max-width: 600px) {
+    width: 27.3%;
+  }
+  @media (min-width: 601px) and (max-width: 700px) {
+    width: 27.4%;
+  }
+  @media (min-width: 701px) and (max-width: 800px) {
+    width: 27.9%;
+  }
+  @media (min-width: 801px) and (max-width: 900px) {
+    width: 28%;
+  }
+  @media (min-width: 901px) and (max-width: 1000px) {
+    width: 28%;
+  }
+  @media (min-width: 1101px) and (max-width: 1200px) {
+    width: 28.3%;
+  }
+
+  width: 28.4%;
+  margin-right: 14px;
+}
+
+////////   year   /////////
+
+.form-field-year {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  text-align: center;
+  font-size: 1.5rem;
+  // padding: 10px;
+  border-radius: 12px;
+  transition: border-color 0.2s;
+  &:placeholder-shown ~ .form-label-year {
+    font-size: $lblsize;
+    // font-weight: bold;
+    cursor: text;
+    top: 15px;
+  }
+}
+.form-label-year {
+  position: absolute;
+  left: 45%;
+
+  //برای قرار گرفتن لبل در وسط زمانی که سایز کوچکتر میشود
+  @media (min-width: 300px) and (max-width: 400px) {
+    left: 30%;
+  }
+  @media (min-width: 401px) and (max-width: 600px) {
+    left: 35%;
+  }
+  @media (min-width: 601px) and (max-width: 800px) {
+    left: 37%;
+  }
+  @media (min-width: 801px) and (max-width: 1000px) {
+    left: 41%;
+  }
+  top: 5%;
+  margin-top: -5px;
+  color: $gray;
+  display: block;
+  transition: 0.2s;
+}
+
+.form-field-year:focus ~ label,
+.form-field-year:not(:placeholder-shown) ~ label {
+  @media (min-width: 300px) and (max-width: 349px) {
+    transform: translate(18px, -20px);
+  }
+  @media (min-width: 350px) and (max-width: 399px) {
+    transform: translate(25px, -20px);
+  }
+  @media (min-width: 400px) and (max-width: 449px) {
+    transform: translate(30px, -20px);
+  }
+  @media (min-width: 450px) and (max-width: 499px) {
+    transform: translate(35px, -20px);
+  }
+  @media (min-width: 500px) and (max-width: 767px) {
+    transform: translate(45px, -20px);
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    transform: translate(67px, -20px);
+  }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    transform: translate(95px, -20px);
+  }
+  @media (min-width: 1201px) {
+    transform: translate(115px, -20px);
+  }
+}
+
+.form-field-year:focus {
+  ~ .form-label-year {
+    position: absolute;
+    top: 0;
+    outline: none;
+    pointer-events: none;
+    font-size: 15px;
+    display: block;
+    transition: 0.2s;
+    @media (min-width: 300px) and (max-width: 349px) {
+      transform: translate(18px, -17px);
+    }
+    @media (min-width: 350px) and (max-width: 399px) {
+      transform: translate(25px, -17px);
+    }
+    @media (min-width: 400px) and (max-width: 449px) {
+      transform: translate(30px, -17px);
+    }
+    @media (min-width: 450px) and (max-width: 499px) {
+      transform: translate(35px, -17px);
+    }
+    @media (min-width: 500px) and (max-width: 767px) {
+      transform: translate(45px, -17px);
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      transform: translate(67px, -17px);
+    }
+    @media (min-width: 992px) and (max-width: 1200px) {
+      transform: translate(95px, -17px);
+    }
+    @media (min-width: 1201px) {
+      transform: translate(115px, -17px);
+    }
+    color: $havij;
+  }
+  &::placeholder {
+    color: $havij;
+  }
+
+  padding-bottom: 6px;
+  border-width: 2px;
+  border: $havij 2px solid;
+  background-color: $backgroud-color;
+}
+
+/* reset input */
+.form-field-year {
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
+}
+
+////////// MONTH   ////////////
+
+.form-field-month {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  text-align: center;
+  font-size: 1.5rem;
+  // padding: 10px;
+  border-radius: 12px;
+  transition: border-color 0.2s;
+
+  &:placeholder-shown ~ .form-label-month {
+    font-size: $lblsize;
+    cursor: text;
+    top: 15px;
+  }
+}
+.form-label-month {
+  position: absolute;
+  left: 45%;
+  @media (min-width: 300px) and (max-width: 400px) {
+    left: 37%;
+  }
+  @media (min-width: 401px) and (max-width: 500px) {
+    left: 40%;
+  }
+  @media (min-width: 501px) and (max-width: 600px) {
+    left: 44%;
+  }
+  top: 5%;
+  margin-top: -5px;
+  color: $gray;
+  display: block;
+  transition: 0.2s;
+}
+
+.form-field-month:focus ~ label,
+.form-field-month:not(:placeholder-shown) ~ label {
+  @media (min-width: 300px) and (max-width: 349px) {
+    transform: translate(18px, -20px);
+  }
+  @media (min-width: 350px) and (max-width: 399px) {
+    transform: translate(25px, -20px);
+  }
+  @media (min-width: 400px) and (max-width: 449px) {
+    transform: translate(27px, -20px);
+  }
+  @media (min-width: 450px) and (max-width: 499px) {
+    transform: translate(33px, -20px);
+  }
+  @media (min-width: 500px) and (max-width: 767px) {
+    transform: translate(43px, -20px);
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    transform: translate(67px, -20px);
+  }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    transform: translate(95px, -20px);
+  }
+  @media (min-width: 1201px) {
+    transform: translate(120px, -20px);
+  }
+}
+
+.form-field-month:focus {
+  ~ .form-label-month {
+    position: absolute;
+    top: 0;
+    outline: none;
+    pointer-events: none;
+    font-size: 15px;
+    display: block;
+    transition: 0.2s;
+    //font-size: 2rem;
+    @media (min-width: 300px) and (max-width: 349px) {
+      transform: translate(18px, -17px);
+    }
+    @media (min-width: 350px) and (max-width: 399px) {
+      transform: translate(25px, -17px);
+    }
+    @media (min-width: 400px) and (max-width: 449px) {
+      transform: translate(27px, -17px);
+    }
+    @media (min-width: 450px) and (max-width: 499px) {
+      transform: translate(33px, -17px);
+    }
+    @media (min-width: 500px) and (max-width: 767px) {
+      transform: translate(43px, -17px);
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      transform: translate(67px, -17px);
+    }
+    @media (min-width: 992px) and (max-width: 1200px) {
+      transform: translate(95px, -17px);
+    }
+    @media (min-width: 1201px) {
+      transform: translate(120px, -17px);
+    }
+    color: $havij;
+  }
+  &::placeholder {
+    color: $havij;
+  }
+
+  padding-bottom: 6px;
+  //font-weight: 700;
+  border-width: 2px;
+  border: $havij 2px solid;
+  background-color: $backgroud-color;
+}
+
+/* reset input */
+.form-field-month {
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
+}
+
+////////// day   ////////////
+
+.form-field-day {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  text-align: center;
+  font-size: 1.5rem;
+  // padding: 10px;
+  border-radius: 12px;
+  transition: border-color 0.2s;
+  &:placeholder-shown ~ .form-label-day {
+    font-size: $lblsize;
+    cursor: text;
+    top: 14px;
+  }
+}
+.form-label-day {
+  position: absolute;
+  left: 45%;
+  @media (min-width: 300px) and (max-width: 400px) {
+    left: 37%;
+  }
+  @media (min-width: 401px) and (max-width: 500px) {
+    left: 40%;
+  }
+  @media (min-width: 501px) and (max-width: 600px) {
+    left: 44%;
+  }
+
+  top: 5%;
+  margin-top: -5px;
+  color: $gray;
+  display: block;
+  transition: 0.2s;
+}
+
+.form-field-day:focus ~ label,
+.form-field-day:not(:placeholder-shown) ~ label {
+  @media (min-width: 300px) and (max-width: 349px) {
+    transform: translate(18px, -20px);
+  }
+  @media (min-width: 350px) and (max-width: 399px) {
+    transform: translate(25px, -20px);
+  }
+  @media (min-width: 400px) and (max-width: 449px) {
+    transform: translate(27px, -20px);
+  }
+  @media (min-width: 450px) and (max-width: 499px) {
+    transform: translate(33px, -20px);
+  }
+  @media (min-width: 500px) and (max-width: 767px) {
+    transform: translate(43px, -20px);
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    transform: translate(67px, -20px);
+  }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    transform: translate(95px, -20px);
+  }
+  @media (min-width: 1201px) {
+    transform: translate(120px, -20px);
+  }
+}
+
+.form-field-day:focus {
+  ~ .form-label-day {
+    position: absolute;
+    top: 0;
+    outline: none;
+    pointer-events: none;
+    font-size: 15px;
+    display: block;
+    transition: 0.2s;
+    //font-size: 2rem;
+    @media (min-width: 300px) and (max-width: 349px) {
+      transform: translate(18px, -17px);
+    }
+    @media (min-width: 350px) and (max-width: 399px) {
+      transform: translate(25px, -17px);
+    }
+    @media (min-width: 400px) and (max-width: 449px) {
+      transform: translate(27px, -17px);
+    }
+    @media (min-width: 450px) and (max-width: 499px) {
+      transform: translate(33px, -17px);
+    }
+    @media (min-width: 500px) and (max-width: 767px) {
+      transform: translate(43px, -17px);
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      transform: translate(67px, -17px);
+    }
+    @media (min-width: 992px) and (max-width: 1200px) {
+      transform: translate(95px, -17px);
+    }
+    @media (min-width: 1201px) {
+      transform: translate(120px, -17px);
+    }
+    color: $havij;
+  }
+  &::placeholder {
+    color: $havij;
+  }
+
+  padding-bottom: 6px;
+  border-width: 2px;
+  border: $havij 2px solid;
+  background-color: $backgroud-color;
+}
+
+/* reset input */
+.form-field-day {
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,81 @@
+.swiper-slide {
+  height: 170px;
+  text-align: center;
+  line-height: 300px;
+  @media (min-width: 300px) and (max-width: 449px) {
+    height: 75px;
+  }
+  @-moz-document url-prefix() {
+    min-height: 280px;
+  }
+}
+
+.swiper-wrapper img {
+  border-radius: 10%;
+  width: 90%;
+  height: 90%;
+  border: #d9d9d9 2px solid;
+  @media (min-width: 300px) and (max-width: 349px) {
+    width: 90%;
+    height: 65px;
+  }
+}
+
+///// packs //////
+
+.packs-slide {
+  height: 280px;
+  text-align: center;
+  line-height: 300px;
+  @media (min-width: 300px) and (max-width: 449px) {
+    height: 200px;
+  }
+}
+
+.packs_wrapper img {
+  border-radius: 10%;
+  width: 110px;
+  height: 140px;
+  @media (min-width: 300px) and (max-width: 449px) {
+    width: 90px;
+    height: 95px;
+  }
+}
+
+.packs_div {
+  width: 90%;
+  height: 90%;
+  border: #d9d9d9 2px solid;
+  border-radius: 8%;
+  @media (min-width: 300px) and (max-width: 449px) {
+    height: 190px;
+    border: #d9d9d9 1px solid;
+  }
+}
+
+//ایکون خرید پک
+.packs_img {
+  height: 35px !important;
+  width: 35px !important;
+  @media (min-width: 300px) and (max-width: 449px) {
+    height: 25px !important;
+    width: 25px !important;
+  }
+}
+
+.pack_name_div {
+  @media (min-width: 300px) and (max-width: 449px) {
+    height: 30px;
+    margin-top: 10px;
+  }
+  height: 30px;
+  margin-top: 30px;
+}
+
+.pack-price {
+  @media (min-width: 300px) and (max-width: 449px) {
+    font-size: 12px;
+  }
+  font-size: 13px;
+}
+///// end packs //////

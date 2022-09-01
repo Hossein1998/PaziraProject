@@ -1,0 +1,126 @@
+.form-group-Number {
+  position: relative;
+  border-radius: 12px;
+  margin-top: 10px;
+  height: 55px;
+  background-color: $backgroud-color;
+  width: 80%;
+}
+.form-field-Number {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  color: #9e9e9e;
+  background: transparent;
+  text-align: center;
+  font-size: 1.5rem;
+  // padding: 10px;
+  border-radius: 12px;
+  transition: border-color 0.2s;
+
+  &:placeholder-shown ~ .form-label-Number {
+    font-size: $lblsize;
+    cursor: text;
+    top: 15px;
+  }
+}
+.form-label-Number {
+  position: absolute;
+  //   left: 65%;
+  top: 5%;
+  margin-top: -5px;
+  // lblدر وسط قرار بگیرد زمانی که سایز گوچک میشود
+  //   @media (min-width: 300px) and (max-width: 400px) {
+  //     left: 60%;
+  //     margin-left: -60px;
+  //   }
+  //   @media (min-width: 768px) {
+  //     left: 55%;
+  //     margin-left: -60px;
+  //   }
+  color: $gray;
+  display: block;
+  transition: 0.2s;
+}
+.form-field-Number:focus ~ label,
+.form-field-Number:not(:placeholder-shown) ~ label {
+  @media (min-width: 300px) and (max-width: 349px) {
+    transform: translate(42px, -22px);
+  }
+  @media (min-width: 350px) and (max-width: 399px) {
+    transform: translate(50px, -22px);
+  }
+  @media (min-width: 400px) and (max-width: 449px) {
+    transform: translate(60px, -22px);
+  }
+  @media (min-width: 450px) and (max-width: 499px) {
+    transform: translate(70px, -22px);
+  }
+  @media (min-width: 500px) and (max-width: 767px) {
+    transform: translate(82px, -22px);
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    transform: translate(115px, -22px);
+  }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    transform: translate(160px, -22px);
+  }
+  @media (min-width: 1201px) {
+    transform: translate(200px, -22px);
+  }
+}
+.form-field-Number:focus {
+  ~ .form-label-Number {
+    position: absolute;
+    top: 0;
+    outline: none;
+    pointer-events: none;
+    font-size: 15px;
+    display: block;
+    transition: 0.2s;
+    //font-size: 2rem;
+    transform: translate(50px, -20px);
+    @media (min-width: 300px) and (max-width: 349px) {
+      transform: translate(42px, -17px);
+    }
+    @media (min-width: 350px) and (max-width: 399px) {
+      transform: translate(50px, -17px);
+    }
+    @media (min-width: 400px) and (max-width: 449px) {
+      transform: translate(60px, -17px);
+    }
+    @media (min-width: 450px) and (max-width: 499px) {
+      transform: translate(70px, -17px);
+    }
+    @media (min-width: 500px) and (max-width: 767px) {
+      transform: translate(82px, -17px);
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      transform: translate(115px, -17px);
+    }
+    @media (min-width: 992px) and (max-width: 1200px) {
+      transform: translate(160px, -17px);
+    }
+    @media (min-width: 1201px) {
+      transform: translate(200px, -17px);
+    }
+    color: $havij;
+    //font-weight: 700;
+  }
+  &::placeholder {
+    color: $havij;
+  }
+
+  padding-bottom: 6px;
+  //font-weight: 700;
+  border-width: 2px;
+  border: $havij 2px solid;
+  background-color: $backgroud-color;
+}
+.form-field-Number {
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
+}

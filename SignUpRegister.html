@@ -1,0 +1,202 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./styles/css/SignUpRegister.css">
+    <title>SignUp Register</title>
+</head>
+
+<body>
+    <!--Preloader-->
+    <div class="preloader d-flex justify-content-center align-items-center">
+        <img src="./img/logo 2.png" alt="preloader">
+    </div>
+    <!--end Preloader-->
+    <header>
+        <div class="container">
+            <div class="header_div1">
+            </div>
+        </div>
+        <!-- between hearder and input -->
+        <div class="header_div2">
+        </div>
+        <!-- end between hearder and input -->
+    </header>
+
+    <section class="container">
+        <!-- user image -->
+        <div class="row justify-content-center">
+            <img class="preview" src="./img/user.png" />
+            <input id="upload" type="file" accept="image/*" />
+        </div>
+        <!-- end user image -->
+
+        <!-- name and family inputs -->
+        <div class="row d-flex justify-content-center">
+            <div class="form-group-family mt-4">
+                <input type="text" class="form-field-family" placeholder=" " name="family" id='family' required />
+                <label for="family" class="form-label-family">نام خانوادگی</label>
+            </div>
+            <div class="form__group mt-4">
+                <input type="text" class="form-field-name" placeholder=" " name="name" id='name' required />
+                <label for="name" class="form-label-name">نام</label>
+            </div>
+        </div>
+        <!-- end name and family inputs -->
+
+
+        <!-- gender radio button -->
+        <div class="row mt-4 no-gutters">
+            <div class="col-9 text-right pr-5 pr-sm-1">
+                <div class="radiobuttons">
+                    <div class="rdio rdio-primary d-inline">
+                        <input name="radio" value="1" id="radio1" type="radio" checked>
+                        <label class="gender_lbl" for="radio1">زن</label>
+                    </div>
+                    <div class="rdio rdio-primary d-inline ml-5">
+                        <input name="radio" value="2" id="radio2" type="radio">
+                        <label class="gender_lbl" for="radio2">مرد</label>
+                    </div>
+                </div>
+            </div>
+            <!-- end gender radio button -->
+
+            <!-- gender text -->
+            <div class="col-3 col-sm-2 d-flex justify-content-center justify-content-sm-end  align-items-center ">
+                <h5 class="gender_txt d-inline"> : جنسیت </h5>
+            </div>
+        </div>
+        <!-- end gender text -->
+
+        <!-- birthday inputs -->
+        <div class="row mt-4 no-gutters ">
+            <div class="col-10 d-flex justify-content-end ">
+                <div class="form-group-birth">
+                    <input type="tel" class="form-field-year" placeholder=" " name="year" id='year' required />
+                    <label for="year" class="form-label-year">سال</label>
+                    <div class="d-inline m-0 text-center"></div>
+                </div>
+                <div class="form-group-birth">
+                    <input type="tel" class="form-field-month" placeholder=" " name="month" id='month' required />
+                    <label for="month" class="form-label-month">ماه</label>
+                    <div class="d-inline m-0 text-center"></div>
+                </div>
+                <div class="form-group-birth">
+                    <input type="tel" class="form-field-day" placeholder=" " name="day" id='day' required />
+                    <label for="day" class="form-label-day">روز</label>
+                    <div class="d-inline m-0 text-center"></div>
+                </div>
+            </div>
+
+            <div class="col-2 col-sm-2 d-flex justify-content-start align-items-center pl-md-4 pl-sm-2">
+                <h5 class="birth_txt mt-3 "> : تولد </h5>
+            </div>
+
+        </div>
+        <!-- end birthday inputs -->
+
+        <!-- address input -->
+        <div class="row mt-3">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="form-group-address ">
+                    <input type="text" class="form-field-address text-right" placeholder=" " name="address" id='address'
+                        required />
+                    <label for="address" class="form-label-address">آدرس</label>
+                    <div class="d-inline m-0 text-center"></div>
+                </div>
+            </div>
+        </div>
+        <!-- end address input -->
+
+        <!-- email input -->
+        <div class="row mt-3">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="form-group-email ">
+                    <input type="email" class="form-field-email" placeholder=" " name="email" id='email' required />
+                    <label for="email" class="form-label-email">ایمیل</label>
+                    <div class="d-inline m-0 text-center"></div>
+                </div>
+            </div>
+            <!-- end email input -->
+
+            <!-- next button -->
+            <button class="enter_button btn btn-block text-center mx-auto" type="submit"> مرحله بعد</button>
+            <!-- end  next button -->
+        </div>
+
+
+    </section>
+
+
+    <!-- snackbar -->
+    <!-- <button onclick="myFunction()">Show Snackbar</button> -->
+    <div id="snackbar"></div>
+    <!-- end snackbar -->
+
+
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <script>
+
+        // set profile image
+        $(".preview").click(function () {
+            $("#upload").click();
+        });
+
+        $("#upload").change(function () {
+            preview(this);
+        });
+
+        function preview(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('.preview').attr('src', e.target.result);
+                };
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        //end set profile image
+
+        window.addEventListener('load', () => document.querySelector('.preloader')
+            .classList.add('hidePreloader'));
+
+        // snackbar
+        function myFunction() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        }
+            //end snackbar
+
+
+    </script>
+    <!-- radio button script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- script js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

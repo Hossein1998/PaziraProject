@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Mj_Beirut-Md";
+  src: url("../../font/Mj_Beirut-Md.ttf");
+}
+
+body,
+html {
+  font-family: "Mj_Beirut-Md";
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.msg1-div {
+  border: #ff9800 3px solid;
+  width: 100%;
+  height: 11%;
+  border-radius: 5px;
+}
+
+.msg2-div {
+  border: #ff9800 3px solid;
+  width: 100%;
+  height: 22%;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=ErrorMsg.css.map */

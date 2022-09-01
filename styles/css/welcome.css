@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "Mj_Beirut-Md";
+  src: url("../../font/Mj_Beirut-Md.ttf");
+}
+
+body,
+html {
+  font-family: "Mj_Beirut-Md";
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.div2 {
+  height: 580px;
+}
+
+.pazira_logo {
+  height: 370px;
+}
+
+.welcome_txt {
+  color: #ff9800;
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .pazira_logo {
+    height: 270px;
+  }
+  .div2 {
+    height: 420px;
+  }
+  .pazira_txt {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=welcome.css.map */

@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Mj_Beirut-Md";
+  src: url("../../font/Mj_Beirut-Md.ttf");
+}
+
+body,
+html {
+  font-family: "Mj_Beirut-Md";
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.img-news {
+  border-radius: 10px;
+}
+
+.date_txt {
+  direction: rtl;
+  color: #a5a5a5;
+  font-size: 13px;
+}
+/*# sourceMappingURL=News.css.map */

@@ -1,0 +1,28 @@
+$havij: #ff9800;
+$havij_yavash: #ffefd8;
+$gray: #9e9e9e;
+$backgroud-color: #f6f5f5;
+$snackbar_backgroun: #333;
+$green: #00c86f;
+$lightgreen: #00c853;
+$white:#ffffff;
+$black:#202020;
+$lblsize: 1.3rem;
+
+@font-face {
+  font-family: "Mj_Beirut-Md";
+  src: url("../../font/Mj_Beirut-Md.ttf");
+}
+
+body,
+html {
+  font-family: "Mj_Beirut-Md";
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+

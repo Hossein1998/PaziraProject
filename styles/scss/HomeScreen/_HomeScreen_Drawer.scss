@@ -1,0 +1,45 @@
+.drawer-header {
+  background-color: $havij;
+}
+.profile_img {
+  height: 125px;
+  width: 125px;
+}
+.div_Email_Edit {
+  height: 30px;
+}
+.user-name {
+  color: $white;
+}
+.user-email {
+  color: $white;
+  font-size: 13px;
+  margin-top: 3px;
+}
+.edit_profile {
+  color: $white;
+  font-size: 14px;
+  margin-top: 6px !important;
+}
+.img-icon {
+  width: 30px;
+  height: 30px;
+}
+.icon_txt {
+  color: $gray;
+  font-size: 18px;
+}
+#div_icon {
+  height: 50px;
+}
+#div_icon:hover {
+  background-color: $havij_yavash;
+
+  .img-icon {
+    color: $havij;
+  }
+  .icon_txt {
+    color: $havij;
+    font-size: 19px;
+  }
+}

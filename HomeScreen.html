@@ -1,0 +1,535 @@
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- bootstrap-drawer -->
+    <link rel="stylesheet" href="dist/css/bootstrap-drawer.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="./styles/css/HomeScreen.css">
+    <title>HomeScreen</title>
+
+</head>
+
+<body>
+    <nav>
+        <div class="container-fluid ">
+            <div class="ml-0">
+                <ul>
+                    <li class="nav-item" style="float: left;">
+                        <button class="btn btn2"><i class="fa fa-bars pt-2" data-toggle="drawer" data-target="#drawer-1"
+                                style="width: 30px; font-size: 1.8rem;"></i></button></li>
+                    <li class="nav-item"><a href="#">
+                            <h5 class="menu_txt">خانه</h5>
+                        </a></li>
+                    <li class="nav-item"><a href="#">
+                            <h5 class="menu_txt">سبد خرید</h5>
+                        </a></li>
+                    <li class="nav-item"><a href="#">
+                            <h5 class="menu_txt">سفارشات</h5>
+                        </a></li>
+                    <li class="nav-item"><a href="#">
+                            <h5 class="menu_txt">اخبار و مقالات</h5>
+                        </a></li>
+                </ul>
+
+            </div>
+
+            <!-- Drawer -->
+            <div class="drawer drawer-left slide" tabindex="-1" role="dialog" aria-labelledby="drawer-1-title"
+                aria-hidden="true" id="drawer-1">
+                <div class="drawer-content drawer-content-scrollable" role="document">
+                    <div class="drawer-header">
+                        <img src="./img/bill.jpg" alt="logo" class="profile_img img-fluid rounded-circle mr-2 mt-2">
+                        <h6 class="user-name m-0 mt-4 mr-3 text-right"> بیل گیتس ایرامنش</h6>
+                        <div class="div_Email_Edit m-0 mt-2">
+                            <p class="user-email float-right mt-2 mr-3">BillGates@gmail.com</p>
+                            <a href="#" class="m-0 ">
+                                <p class="edit_profile m-0 float-left ml-2">ویرایش</p>
+                            </a>
+
+                        </div>
+
+                    </div>
+                    <div class="drawer-body text-center mt-1 m-0 p-0">
+                        <div class="d-flex justify-content-start mt-2 pr-3 align-items-center" id="div_icon"
+                            onmouseover="hoverHome();" onmouseout="unhoverHome();">
+                            <a href="#" class="mt-1 text-decoration-none">
+                                <img src="./img/house-black-silhouette-without-door.png" alt="home_icon"
+                                    class="img-icon img-fluid" id="home_icon">
+                                <h5 class="icon_txt d-inline mr-4 ">خانه</h5>
+                            </a>
+                        </div>
+
+                        <div class="d-flex justify-content-start align-items-center pr-3 mt-2" id="div_icon"
+                            onmouseover="hoverCart();" onmouseout="unhoverCart();">
+                            <a href="#" class=" mt-1 text-decoration-none">
+                                <img src="./img/shopping-cart (1).png" alt="cart_icon" class=" img-icon img-fluid"
+                                    id="cart_icon">
+                                <h5 class="icon_txt d-inline mr-4 ">سبد خرید</h5>
+                            </a>
+                        </div>
+
+                        <div class="d-flex justify-content-start align-items-center pr-3 mt-2 " id="div_icon"
+                            onmouseover="hoverList();" onmouseout="unhoverList();">
+                            <a href=" #" class="  mt-1 text-decoration-none">
+                                <img src="./img/shopping-list.png" alt="list_icon" class="img-icon img-fluid"
+                                    id="list_icon">
+                                <h5 class="icon_txt d-inline mr-4">سفارشات</h5>
+                            </a>
+                        </div>
+
+                        <div class="d-flex justify-content-start  align-items-center pr-3 mt-2" id="div_icon"
+                            onmouseover="hoverNews();" onmouseout="unhoverNews();">
+                            <a href="#" class=" mt-1 text-decoration-none">
+                                <img src="./img/megaphone.png" alt="news_icon" class="img-icon img-fluid"
+                                    id="news_icon">
+                                <h5 class="icon_txt d-inline  mr-4">اخبار و مقالات</h5>
+                            </a>
+                        </div>
+
+                        <div class="d-flex justify-content-start align-items-center pr-3 mt-2" id="div_icon"
+                            onmouseover="hoverPack();" onmouseout="unhoverPack();">
+                            <a href="#" class="  mt-1 text-decoration-none">
+                                <img src="./img/pack 1.png" alt="pack_icon" class="img-icon img-fluid" id="pack_icon">
+                                <h5 class="icon_txt d-inline mr-4">بسته های من</h5>
+                            </a>
+                        </div>
+                        <div class="d-flex justify-content-start align-items-center pr-3 mt-2" id="div_icon"
+                            onmouseover="hoverAbout_us();" onmouseout="unhoverAbout_us();">
+                            <a href="#" class="  mt-1 text-decoration-none">
+                                <img src="./img/about-us.png" alt="aboutUs_icon" class="img-icon img-fluid "
+                                    id="about_us_icon">
+                                <h5 class="icon_txt d-inline mr-4">درباره ما</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end Drawer -->
+        </div>
+    </nav>
+
+    <section>
+        <!-- slide bar -->
+        <div class="container mt-3" style="direction: ltr !important;">
+            <div class="row">
+                <div class="slideshow col-11 col-md-10 col-lg-8">
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="./img/1.jpg">
+                        <!-- <div class="text">Caption Text</div> -->
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="./img/2.jpg">
+                        <!-- <div class="text">Caption Two</div> -->
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="./img/3.jpg">
+                        <!-- <div class="text">Caption Three</div> -->
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 /4</div>
+                        <img src="./img/1.jpg">
+                        <!-- <div class="text">Caption Three</div> -->
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="text-center mb-0 mt-1 mt-lg-2">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <!-- end slide bar -->
+
+        <!-- categorys -->
+        <div class="container mt-1">
+            <div class="row">
+                <div class="swiper-container col-11 col-md-10 col-lg-8" style="margin:auto" id="swiper-container2">
+                    <h5 class="text-right  m-0 mb-1 mr-1 mr-md-3" style="font-size:22px;">دسته بندی</h5>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-right">
+                            <a href="#">
+                                <img src="./img/1.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="swiper-slide text-right ">
+                            <a href="#">
+                                <img src="./img/4.jpg" alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="swiper-slide text-right ">
+                            <a href="#">
+                                <img src="./img/3.jpg " alt="" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="swiper-slide text-right">
+                            <a href="#">
+                                <img src="./img/1.jpg " alt="" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end categorys -->
+
+        <!-- packs -->
+        <div class="container mt-3">
+            <div class="row">
+                <div class="swiper-container col-11 col-md-10 col-lg-8" style="margin:auto" id="swiper-container3">
+                    <h5 class="text-right m-0 mb-1 mr-1 mr-md-3" style="font-size:22px">همه بسته ها</h5>
+                    <div class="packs_wrapper swiper-wrapper">
+                        <!-- pack 1 -->
+                        <div class="packs-slide swiper-slide text-right">
+                            <div class="packs_div text-center pt-3 pr-2 pl-2 pl-md-3 pr-md-3">
+                                <img src="./img/packs 1.png" alt="" class="pack-img img-fluid border-0">
+                                <!-- pack name -->
+                                <div class="pack_name_div text-right"
+                                    style="height:IMAGE_HEIGHT; line-height:IMAGE_HEIGHT;">
+                                    <h6 class="d-inline"> نام بسته </h6>
+                                    <a href="#">
+                                        <img src="./img/add.png" alt=""
+                                            class="packs_img border-0 mt-2 img-fluid float-left">
+                                    </a>
+                                    <h6 class="mt-2 pack-price">9,900<span> تومان</span> </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end pack 1 -->
+
+                        <!-- pack 2 -->
+                        <div class="packs-slide swiper-slide text-right">
+                            <div class="packs_div text-center pt-3 pr-2 pl-2 pl-md-3 pr-md-3">
+                                <img src="./img/packs 2.png" alt="" class="pack-img img-fluid border-0">
+                                <!-- pack name -->
+                                <div class="pack_name_div text-right"
+                                    style="height:IMAGE_HEIGHT; line-height:IMAGE_HEIGHT;">
+                                    <h6 class="d-inline"> نام بسته </h6>
+                                    <a href="#">
+                                        <img src="./img/add.png" alt=""
+                                            class="packs_img border-0 mt-2 img-fluid float-left">
+                                    </a>
+                                    <h6 class="mt-2 pack-price">9,900<span> تومان</span> </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end pack 2 -->
+
+                        <!-- pack 3 -->
+                        <div class="packs-slide swiper-slide text-right">
+                            <div class="packs_div text-center pt-3 pr-2 pl-2 pl-md-3 pr-md-3">
+                                <img src="./img/packs 3.png" alt="" class="pack-img img-fluid border-0">
+                                <!-- pack name -->
+                                <div class="pack_name_div text-right"
+                                    style="height:IMAGE_HEIGHT; line-height:IMAGE_HEIGHT;">
+                                    <h6 class="d-inline"> نام بسته </h6>
+                                    <a href="#">
+                                        <img src="./img/add.png" alt=""
+                                            class="packs_img border-0 mt-2 img-fluid float-left">
+                                    </a>
+                                    <h6 class="mt-2 pack-price">9,900<span> تومان</span> </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end pack 3 -->
+
+                        <!-- pack 4 -->
+                        <div class="packs-slide swiper-slide text-right">
+                            <div class="packs_div text-center pt-3 pr-2 pl-2 pl-md-3 pr-md-3">
+                                <img src="./img/packs 1.png" alt="" class="pack-img img-fluid border-0">
+                                <!-- pack name -->
+                                <div class="pack_name_div text-right"
+                                    style="height:IMAGE_HEIGHT; line-height:IMAGE_HEIGHT;">
+                                    <h6 class="d-inline"> نام بسته </h6>
+                                    <a href="#">
+                                        <img src="./img/add.png" alt=""
+                                            class="packs_img border-0 mt-2 img-fluid float-left">
+                                    </a>
+                                    <h6 class="mt-2 pack-price">9,900<span> تومان</span> </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end pack 4 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end packs -->
+
+        <!-- Best selling -->
+        <div class="container mt-0">
+            <div class="row">
+                <div class="swiper-container col-11 col-md-10 col-lg-8" style="margin:auto" id="swiper-container4">
+                    <h5 class="text-right m-0 mb-1 mr-1 mr-md-3" style="font-size:22px">پرفروش ترین</h5>
+                    <div class="packs_wrapper swiper-wrapper">
+                        <!-- pack 1 -->
+                        <div class="packs-slide swiper-slide text-right">
+                            <div class="packs_div text-center pt-3 pr-2 pl-2 pl-md-3 pr-md-3">
+                                <img src="./img/packs 1.png" alt="" class="pack-img img-fluid border-0">
+                                <!-- pack name -->
+                                <div class="pack_name_div text-right"
+                                    style="height:IMAGE_HEIGHT; line-height:IMAGE_HEIGHT;">
+                                    <h6 class="d-inline"> نام بسته </h6>
+                                    <a href="#">
+                                        <img src="./img/add.png" alt=""
+                                            class="packs_img border-0 mt-2 img-fluid float-left">
+                                    </a>
+                                    <h6 class="mt-2 pack-price">9,900<span> تومان</span> </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end pack 1 -->
+
+                        <!-- pack 2 -->
+                        <div class="packs-slide swiper-slide text-right">
+                            <div class="packs_div text-center pt-3 pr-2 pl-2 pl-md-3 pr-md-3">
+                                <img src="./img/packs 2.png" alt="" class="pack-img img-fluid border-0">
+                                <!-- pack name -->
+                                <div class="pack_name_div text-right"
+                                    style="height:IMAGE_HEIGHT; line-height:IMAGE_HEIGHT;">
+                                    <h6 class="d-inline"> نام بسته </h6>
+                                    <a href="#">
+                                        <img src="./img/add.png" alt=""
+                                            class="packs_img border-0 mt-2 img-fluid float-left">
+                                    </a>
+                                    <h6 class="mt-2 pack-price">9,900<span> تومان</span> </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end pack 2 -->
+
+                        <!-- pack 3 -->
+                        <div class="packs-slide swiper-slide text-right">
+                            <div class="packs_div text-center pt-3 pr-2 pl-2 pl-md-3 pr-md-3">
+                                <img src="./img/packs 3.png" alt="" class="pack-img img-fluid border-0">
+                                <!-- pack name -->
+                                <div class="pack_name_div text-right"
+                                    style="height:IMAGE_HEIGHT; line-height:IMAGE_HEIGHT;">
+                                    <h6 class="d-inline"> نام بسته </h6>
+                                    <a href="#">
+                                        <img src="./img/add.png" alt=""
+                                            class="packs_img border-0 mt-2 img-fluid float-left">
+                                    </a>
+                                    <h6 class="mt-2 pack-price">9,900<span> تومان</span> </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end pack 3 -->
+
+                        <!-- pack 4 -->
+                        <div class="packs-slide swiper-slide text-right">
+                            <div class="packs_div text-center pt-3 pr-2 pl-2 pl-md-3 pr-md-3">
+                                <img src="./img/packs 1.png" alt="" class="pack-img img-fluid border-0">
+                                <!-- pack name -->
+                                <div class="pack_name_div text-right"
+                                    style="height:IMAGE_HEIGHT; line-height:IMAGE_HEIGHT;">
+                                    <h6 class="d-inline"> نام بسته </h6>
+                                    <a href="#">
+                                        <img src="./img/add.png" alt=""
+                                            class="packs_img border-0 mt-2 img-fluid float-left">
+                                    </a>
+                                    <h6 class="mt-2 pack-price">9,900<span> تومان</span> </h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end pack 4 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Best selling -->
+
+    </section>
+
+
+
+
+
+
+
+    <!-- snackbar -->
+    <!-- <button onclick="myFunction()">Show Snackbar</button> -->
+    <div id="snackbar">Some text some message..</div>
+    <!-- end snackbar -->
+
+
+
+
+
+    <!-- slider ,swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <script>
+        // snackbar
+        function myFunction() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+        }
+        //end snackbar
+
+        // <!-- category -->
+        var mySwiper2 = new Swiper('#swiper-container2', {
+            watchSlidesProgress: true,
+            watchSlidesVisibility: true,
+            slidesPerView: 2.5
+
+        })
+        // <!-- end category -->
+
+        // <!-- packs -->
+        var mySwiper3 = new Swiper('#swiper-container3', {
+            watchSlidesProgress: true,
+            watchSlidesVisibility: true,
+            slidesPerView: 2.5
+
+        })
+        // <!-- end packs -->
+
+
+        // Best selling
+        var mySwiper3 = new Swiper('#swiper-container4', {
+            watchSlidesProgress: true,
+            watchSlidesVisibility: true,
+            slidesPerView: 2.5
+
+        })
+        // end Best selling
+
+        // slider
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        //end slider
+
+        //change icon when hover
+
+        function hoverAbout_us() {
+            var x = document.getElementById("about_us_icon");
+            x.setAttribute('src', './img/about-us (1).png');
+        }
+
+        function unhoverAbout_us() {
+            var x = document.getElementById("about_us_icon");
+            x.setAttribute('src', './img/about-us.png');
+        }
+        function hoverPack() {
+            var x = document.getElementById("pack_icon");
+            x.setAttribute('src', './img/pack.png');
+        }
+        function unhoverPack() {
+            var x = document.getElementById("pack_icon");
+            x.setAttribute('src', './img/pack 1.png');
+        }
+        function hoverNews() {
+            var x = document.getElementById("news_icon");
+            x.setAttribute('src', './img/megaphone (1).png');
+        }
+        function unhoverNews() {
+            var x = document.getElementById("news_icon");
+            x.setAttribute('src', './img/megaphone.png');
+        }
+        function hoverList() {
+            var x = document.getElementById("list_icon");
+            x.setAttribute('src', './img/shopping-list (1).png');
+        }
+        function unhoverList() {
+            var x = document.getElementById("list_icon");
+            x.setAttribute('src', './img/shopping-list.png');
+        }
+        function hoverCart() {
+            var x = document.getElementById("cart_icon");
+            x.setAttribute('src', './img/shopping-cart (2).png');
+        }
+        function unhoverCart() {
+            var x = document.getElementById("cart_icon");
+            x.setAttribute('src', './img/shopping-cart (1).png');
+        }
+        function hoverHome() {
+            var x = document.getElementById("home_icon");
+            x.setAttribute('src', './img/house-black-silhouette-without-door (1).png');
+        }
+        function unhoverHome() {
+            var x = document.getElementById("home_icon");
+            x.setAttribute('src', './img/house-black-silhouette-without-door.png');
+        }
+        // end change icon when hover
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+    <!-- js drawer -->
+    <script src="dist/js/bootstrap-drawer.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- script js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- <script src="dist/js/bootstrap-drawer.js"></script>
+    <script type="text/javascript"> -->
+
+    </script>
+</body>
+
+</html>
